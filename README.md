@@ -45,3 +45,10 @@ Throws `RangeError` for negative or non-integer `offset` or `length`.
 ### `reader.size()`
 
 Returns the total size reported by the source.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
