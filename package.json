@@ -1,6 +1,6 @@
 {
   "name": "paginated-stream-reader",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Reads arbitrary byte ranges from large files using seek-style offset and length parameters.",
   "type": "module",
   "main": "src/index.js",
